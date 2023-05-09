@@ -1,1 +1,8 @@
-<pre>{{ todos | json }}</pre>
+<ol>
+  <li *ngFor="let todo of todos">
+    <h2>{{ todo.title }}</h2>
+    <p>{{ todo.description }}</p>
+    <p>Progress: {{ (todo.progress * 100) / 1 }}%</p>
+    <p>{{ todo.complete ? "Complete ✔" : "Incomplete ✗" }}</p>
+  </li>
+</ol>
