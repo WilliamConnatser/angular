@@ -14,12 +14,14 @@ export class TodosComponent {
 
   todos: Todos[] = [
     {
+      id: 0,
       title: 'Finish initial app logic',
       description: 'Finish yet another todo app, but angular style!',
       progress: 0.1,
       complete: false,
     },
     {
+      id: 1,
       title: 'Add random Angular features',
       description:
         'Add random features to use more advanced Angular primitives',
@@ -27,6 +29,7 @@ export class TodosComponent {
       complete: false,
     },
     {
+      id: 2,
       title: 'Add random NgRx and RxJs features',
       description:
         'Add random features that use NgRx and RxJs more extensively',
@@ -34,6 +37,7 @@ export class TodosComponent {
       complete: false,
     },
     {
+      id: 3,
       title: 'Write a bunch of tests',
       description:
         'Write unit tests and e2e tests which achieve 90% test coverage',
