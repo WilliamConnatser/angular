@@ -1,8 +1,10 @@
 <ol>
   <li *ngFor="let todo of todos" class="todo-list-item">
-    <h2>{{ todo.title }}</h2>
-    <p>{{ todo.description }}</p>
-    <p>Progress: {{ (todo.progress * 100) / 1 }}%</p>
-    <p>{{ todo.complete ? "Complete ✔" : "Incomplete ✗" }}</p>
+    <h4 class="todo-title">{{ todo.title }}</h4>
+    <section class="todo-body">
+      <p>{{ todo.description }}</p>
+      <p>Progress: {{ (todo.progress * 100) / 1 }}%</p>
+      <p>{{ todo.complete ? "Complete ✔" : "Incomplete ✗" }}</p>
+    </section>
   </li>
 </ol>
