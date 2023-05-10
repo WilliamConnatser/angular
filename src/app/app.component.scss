@@ -1,9 +1,15 @@
+@import "../styles/variables.scss";
+
 .layout-container {
+  color: $lavender-blush;
   padding: 40px;
+  background-color: $paynes-gray;
+  height: 100%;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 900;
+  text-align: center;
   margin-bottom: 20px;
 }
